@@ -1,0 +1,44 @@
+
+body {
+  font-family: sans-serif;
+  background: #f7f9fc;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.gauge {
+  width: 300px;
+  height: 150px;
+  background: conic-gradient(red 0deg 108deg, blue 108deg 216deg, green 216deg 360deg);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+.needle {
+  width: 4px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: rotate(130deg);
+  transform-origin: bottom;
+}
+.score {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.bubbles {
+  margin-top: 30px;
+  text-align: center;
+}
+.bubble {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
